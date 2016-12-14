@@ -59,8 +59,6 @@ body {
       color: $secFont;
     }
 
-
-
   }
 }
 
@@ -73,8 +71,6 @@ section.waiting {
 }
 
 table {
-
-
 
   tr {
     padding-top: 20px;
@@ -100,10 +96,14 @@ h2 {
   font-weight: 200;
   text-transform: uppercase;
   background: $button;
-  padding: 6px 8px;
+  padding: 7px 10px;
   color: white;
   border-radius: 4px;
   display: inline-block;
+
+  &:hover{
+  background: $bg;
+  }
 
   i {
     font-size: 0.80em;
@@ -113,7 +113,33 @@ h2 {
     padding-left: 0.25em;
   }
 
-  &:hover{
-  background: $bg;
+}
+
+@media print {
+
+   .pump, .notfound, .waiting, .print {
+    display: none;
+   }
+
+   table {
+
+     border: 0px;
+
+     th {
+
+     }
+
+     tr {
+
+     }
+
+     tr {
+
+    }
+  }
+
+  div#app {
+    border-radius: 0px;
+    box-shadow: 0px 0px 0px #fff;
   }
 }
