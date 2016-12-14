@@ -4,6 +4,7 @@
   <title>Lost Pump</title>
   <script src='/js/lib/vue-2.1.4.js'></script>
   <script src='/js/lib/jquery-3.1.1.min.js'></script>
+  <script src="https://use.fontawesome.com/e81f5f3c0d.js"></script>
 
   <script src='/js/components/settingsComponent.js'></script>
   <script src='/js/main.js'></script>
@@ -18,7 +19,7 @@
     <p class="description">Use this tool to generate MDI use instruction to when you for some reason cannot use your pump.</p>
   </section>
   <section class='pump'>
-    <label for="pumpid">Search for Pump ID</label>
+    <label for="pumpid">Pump ID</label>
     <input v-on:change='loadSample' type="text" id="pumpid">
     or
     <a href='#' class="button" v-on:click='createPump'>create a new pump</a>
@@ -40,7 +41,7 @@
   <section class='regiment'>
     <p></p>
     <!-- HIDE PRINT-BUTTON IF THERE ARE NO RESULTS -->
-    <a href='#' class="button" v-on:click='print'>Print</a>
+    <a href='#' class="button" v-on:click='print'>Print <i class="fa fa-file-text-o" aria-hidden="true"></i></a>
   </section>
   </div>
 </body>
