@@ -8,7 +8,6 @@
   <script src='/js/components/settingsComponent.js'></script>
   <script src='/js/main.js'></script>
 
-  <link rel='stylesheet' href='/css/reset.css'>
   <link rel='stylesheet' href='/css/style.min.css'>
 </head>
 <body>
@@ -21,7 +20,7 @@
     <label for="pumpid">Search for Pump ID</label>
     <input v-on:change='loadSample' type="text" id="pumpid">
     or
-    <a href='#' class="button" v-on:click='createPump'>click here to create a new pump</a>
+    <a href='#' class="button" v-on:click='createPump'>create a new pump</a>
   </section>
   <section v-if='pumpFound === false' class='notfound'>
     <h2>No pump found</h2>
@@ -39,7 +38,7 @@
   </section>
   <section class='regiment'>
     <p></p>
-    <!-- HIDE IF THERE ARE NO RESULTS -->
+    <!-- HIDE PRINT-BUTTON IF THERE ARE NO RESULTS -->
     <a href='#' class="button" v-on:click='print'>Print</a>
   </section>
   </div>
